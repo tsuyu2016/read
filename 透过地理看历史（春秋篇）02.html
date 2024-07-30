@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>&#x900f;&#x904e;&#x5730;&#x7406;&#x770b;&#x5386;&#x53f2;&#xff08;&#x6625;&#x79cb;&#x7bc7;&#xff09;</title>
+            <title>&#x900f;&#x8fc7;&#x5730;&#x7406;&#x770b;&#x5386;&#x53f2;&#xff08;&#x6625;&#x79cb;&#x7bc7;&#xff09;</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -3023,7 +3023,8 @@ config:
   themeCSS: '
     .grid .tick line{stroke:lightgray;stroke-dasharray:3;opacity:1;}
     .grid .tick text{font-size:16px;}
-    .grid path {stroke-width: 0;}
+    .grid path {stroke-width: 0;} 
+    .sectionTitle {font-weight:900;}
   '
   gantt:
     titleTopMargin:
@@ -3034,7 +3035,7 @@ config:
     rightPadding:
     leftPadding: 200
     fontSize: 16
-    sectionFontSize: 20
+    sectionFontSize: 22
     numberSectionStyles: 4
     axisFormat: "%Y"
     useMaxWidth:
@@ -3046,31 +3047,66 @@ gantt
     axisFormat %s
     todayMarker off
     
-    section 周平王东迁
+    section 时间轴线
     周平王(前770～前720）：姬宜臼: -770,-720
-    【前770】迁都洛邑（镐京东边）: milestone, -770,
+    前770年，周平王迁都洛邑(今洛阳)，自此史称东周: milestone, -770,
     郑武公(前770～前744): -770,-744
     郑庄公(前743～前701）：寤生: -743,-701
-    【前722】太叔约武姜偷袭新郑: milestone, -722,
-    兵败逃往共国(共叔段): milestone, -722,
-    郑庄公与武姜黄泉相见: milestone, -722,
-    </div></pre>
+    前722年，太叔和武姜相约偷袭新郑: milestone, -722,</div></pre>
+<h4 id="登场人物">登场人物</h4>
 <pre style="all:unset;"><div class="mermaid">mindmap
 root))周平王东迁((
   )周平王( 
-  )郑庄公(   
-    ((祭zhai4足:大夫))
-      劝郑庄公收拾段
-    ((颖考叔:大夫))
-      劝郑庄公孝顺母亲
-      与公孙阏e4同掌兵权
-    ((武姜:母亲))
-    ((段:弟))
-      获封制城，京城及其他两城
-    ((郑武公:父亲))
-      ((公子吕:弟))
-        劝郑庄公收拾段
-        攻取京城</div></pre>
+  )郑武公(
+    ((武姜:妻))
+      )郑庄公:寤生(  
+        ((祭zhai4足:大夫))
+        ((颖考叔:大夫))
+        ((段:弟))
+    ((公子吕:弟))</div></pre>
+<h4 id="主要事件">主要事件</h4>
+<pre style="all:unset;"><div class="mermaid">---
+config:
+  themeCSS: '
+    .messageText {font-size: 20px;}
+  '
+  fontSize: 30
+  sequence:
+    noteAlign: left
+    messageFontSize: 20
+    noteFontSize: 20
+---
+sequenceDiagram
+  autonumber
+
+  participant 周王朝
+  participant 郑国
+  participant 京城(郑国)
+  participant 鄢城(郑国)
+  participant 廪延(郑国)
+  participant 城颖(郑国)
+  participant 颖谷(郑国)
+  participant 共国
+
+  周王朝 -&gt;&gt; 周王朝:前770年，周平王迁都洛邑(今洛阳)&lt;br/&gt;自此史称东周
+  郑国 -&gt;&gt; 郑国:前770年，迁都新郑
+  郑国 -&gt;&gt; 郑国:前744年，郑武公去世&lt;br/&gt;寤生即位，即郑庄公
+  郑国 -&gt;&gt; 京城(郑国):武姜逼郑庄公把京城封给叔段&lt;br/&gt;国人称之为京城太叔
+  郑国 -&gt;&gt; 郑国:祭zhai4足&lt;br/&gt;劝郑庄公收拾段
+  京城(郑国) -&gt;&gt; 京城(郑国):太叔招兵买马
+  京城(郑国) -&gt;&gt; 鄢城(郑国):太叔占领
+  京城(郑国) -&gt;&gt; 廪延(郑国):太叔占领
+  郑国 -&gt;&gt; 郑国:公子吕&lt;br/&gt;劝郑庄公收拾段
+  京城(郑国) -&gt;&gt; 郑国:前722年，太叔和武姜相约偷袭新郑
+  郑国 -&gt;&gt; 京城(郑国):郑庄公命公子吕&lt;br/&gt;攻取京城
+  京城(郑国) -&gt;&gt; 鄢城(郑国):太叔逃跑
+  京城(郑国) -&gt;&gt; 共国:太叔逃跑，后人称之为共叔段
+  郑国 -&gt;&gt; 城颖(郑国):发配武姜
+  note right of 城颖(郑国):不到黄泉，永不相见
+  颖谷(郑国) -&gt;&gt; 郑国:颖考叔劝郑庄公孝顺母亲
+  郑国 -&gt;&gt; 城颖(郑国):郑庄公掘地见母，黄泉相见
+  城颖(郑国) -&gt;&gt; 郑国:郑庄公接母亲回新郑
+  郑国 -&gt;&gt; 颖谷(郑国):郑庄公感谢颖考叔，封为大夫&lt;br/&gt;与公孙阏e4同掌兵权</div></pre>
 </div>
         </div>
             
