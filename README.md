@@ -1,1 +1,1 @@
-读书笔记
+用mermaid的gantt和mindmap可视化读书笔记，加深理解，增加阅读的趣味性。
