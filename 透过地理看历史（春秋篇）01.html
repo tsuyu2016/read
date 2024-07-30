@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>&#x900f;&#x904e;&#x5730;&#x7406;&#x770b;&#x5386;&#x53f2;&#xff08;&#x6625;&#x79cb;&#x7bc7;&#xff09;</title>
+            <title>&#x900f;&#x8fc7;&#x5730;&#x7406;&#x770b;&#x5386;&#x53f2;&#xff08;&#x6625;&#x79cb;&#x7bc7;&#xff09;</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -3023,7 +3023,8 @@ config:
   themeCSS: '
     .grid .tick line{stroke:lightgray;stroke-dasharray:3;opacity:1;}
     .grid .tick text{font-size:16px;}
-    .grid path {stroke-width: 0;}
+    .grid path {stroke-width: 0;} 
+    .sectionTitle {font-weight:900;}
   '
   gantt:
     titleTopMargin:
@@ -3034,7 +3035,7 @@ config:
     rightPadding:
     leftPadding: 200
     fontSize: 16
-    sectionFontSize: 20
+    sectionFontSize: 22
     numberSectionStyles: 4
     axisFormat: "%Y"
     useMaxWidth:
@@ -3046,38 +3047,72 @@ gantt
     axisFormat %s
     todayMarker off
 
-    section 烽火戏诸侯
+    section 时间轴线
     周幽王(前781～前771): -781,-771
-    【前779】攻打褒国，得到褒姒: milestone, -779,
-    【前778】褒姒生伯服，立为太子: milestone, -778,
-    申后被废，原太子宜臼被废，逃往申国: milestone, -778,
-    【前771】烽火戏诸侯，周幽王和太子伯服被杀，褒姒被戎兵抢走: milestone, -771,</div></pre>
+    前779年，周幽王攻打褒国，得到褒姒: milestone, -779,
+%%    前778年，褒姒生伯服: milestone, -778,
+    前771年，烽火戏诸侯: milestone, -771,
+%%    周平王(前770～前720): -770,-720
+    郑桓公(前806～前771): -806,-771
+%%    郑武公(前770～前744): -770,-744
+    晋文侯(前780～前746): -780,-746
+    卫武公(前812～前758): -812,-758
+    秦襄公(前777～前766): -777,-766</div></pre>
+<h4 id="登场人物">登场人物</h4>
 <pre style="all:unset;"><div class="mermaid">mindmap
 root))烽火戏诸侯((
   )周幽王(
-    被戎兵所杀
-    ((褒姒))
-      被戎兵抢走
-      ((伯服:子))
-        被戎兵所杀
+    ((褒姒:王后))
+      ((伯服:太子))
     ((申后:王后))
-      被废，后复位
-      ((宜臼:子))
-        逃往申国，后复位，即周平王
+      ((宜臼:太子))
       ((申侯:兄))
-        借兵犬戎联合缯国攻打镐京
-        向晋侯，卫侯，秦君，郑国世子掘突求救打败戎兵
     ((虢石父:卿士))
-      献计骊山烽火戏诸侯博褒姒一笑
-      被戎兵所杀
-  )秦君:秦襄公(
-    协助申侯打败戎兵，表现突出，被加封为伯爵，位列诸侯
-  )掘突:郑庄公(
-    协助申侯打败戎兵，表现突出，被封卿士，娶申侯女
-  )晋侯：晋文侯(
-    协助申侯打败戎兵
-  )卫侯:卫武公(
-    协助申侯打败戎兵</div></pre>
+  )秦君(
+  )郑国世子掘突(
+  )晋侯(
+  )卫侯(</div></pre>
+<h4 id="主要事件">主要事件</h4>
+<pre style="all:unset;"><div class="mermaid">---
+config:
+  themeCSS: '
+    .messageText {font-size: 20px;}
+  '
+  fontSize: 30
+  sequence:
+    noteAlign: left
+    messageFontSize: 20
+    noteFontSize: 20
+---
+sequenceDiagram
+  autonumber
+
+  participant 周王朝
+  participant 褒国
+  participant 西虢国
+  participant 申国
+  participant 郑国
+  participant 秦国
+  participant 犬戎
+
+  周王朝 -&gt;&gt; 褒国:前779年，周幽王攻打褒国，得到褒姒
+  Note right of 褒国:今汉中&lt;br/&gt;姒姓，上古八大姓之一&lt;br/&gt;第一任国君乃大禹之子
+  周王朝 -&gt;&gt; 周王朝:前778年，褒姒生伯服
+  周王朝 -&gt;&gt; 周王朝:王后申后被打入冷宫
+  Note right of 周王朝:申后姓姜，来自申国
+  周王朝 -&gt;&gt; 申国:太子宜臼被废为庶民，逃往申国
+  Note right of 申国:今南阳&lt;br/&gt;姜姓，可追溯到炎帝
+  周王朝 -&gt;&gt; 周王朝:虢石父献计去骊山点烽火博褒姒一笑
+  Note right of 周王朝:虢石父乃西虢国君主&lt;br/&gt;周王朝卿士
+  Note right of 西虢国:今陕西宝鸡市陈仓区&lt;br/&gt;姬姓，周文王弟弟
+  周王朝 -&gt;&gt; 周王朝:前771年，烽火戏诸侯
+  申国 -&gt;&gt; 周王朝:申侯联合犬戎和缯国攻打镐京&lt;br/&gt;杀虢石父，周幽王，太子伯服&lt;br/&gt;戎兵抢走褒姒
+  申国 -&gt;&gt; 犬戎:申侯联合晋侯，卫侯，秦君，郑国世子掘突赶走犬戎
+  周王朝 -&gt;&gt; 周王朝:申后复位
+  周王朝 -&gt;&gt; 周王朝:前770年，太子宜臼继王位，即周平王
+  周王朝 -&gt;&gt; 郑国:封掘突为卿士
+  申国 -&gt;&gt; 郑国:申侯嫁女给掘突(郑武公)，被称为武姜
+  周王朝 -&gt;&gt; 秦国:加封秦君伯爵，位列诸侯</div></pre>
 </div>
         </div>
             
