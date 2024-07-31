@@ -3060,6 +3060,53 @@ gantt
   前720年，宋国内乱，公子冯逃往郑国: milestone, -720,
   宋殇公(前719～前711): -719,-711
   宋庄公(前710～前692): -710,-692</div></pre>
+<pre style="all:unset;"><div class="mermaid">graph TB
+  subgraph 周王朝
+    ZPW((周平王)) -- 长子 --&gt;  JX((姬泄)) --子--&gt;JL((姬林:周桓王))
+    ZPW((周平王)) -- 次子 --&gt;  JH((姬狐))
+    subgraph 周王朝卿士
+      GSH((虢石父)) --孙--&gt; GSJF((虢公忌父))
+    end
+  end
+
+  subgraph 郑国
+    ZZG((郑庄公)) --长子--&gt; GZH((公子忽)) --弟--&gt; GSD((共叔段)) --子--&gt; GZH1((公子滑)) 
+    subgraph 郑国大夫
+      ZZ((祭zhai4足))
+    end
+  end
+
+  GZH1 --投奔--&gt; WHG
+
+  subgraph 卫国
+    WZG((卫/前/庄公)) --妻--&gt; ZJ((庄姜))
+    WZG((卫/前/庄公)) --妻--&gt; LG((厉妫gui1)) --妹--&gt; DG((戴妫gui1))
+    LG((厉妫gui1)) --子--&gt; XB((孝伯))
+    DG((戴妫gui1)) --子--&gt; WHG((公子完:卫桓公))
+    WZG((卫/前/庄公)) --子--&gt; GZJ((公子晋:卫宣公))
+
+    WZG((卫/前/庄公)) --宠妾生子--&gt; ZY((州吁))
+
+    subgraph 卫国大夫
+      SQ((石碏))
+    end
+    SQ --子--&gt; SH((石厚))
+
+    ZY --辅臣--&gt; SH
+  end
+
+  subgraph 鲁国
+    LYG((鲁隐公))
+    subgraph 鲁国大夫
+      GZY((公子豫))
+      GZH2((公子翚hui1))
+    end
+  end
+
+  subgraph 宋国
+    SXG((宋宣公)) --弟--&gt; SMG((宋穆公)) --子--&gt; 公子冯
+    SXG((宋宣公)) --子--&gt; SSG((与夷:宋殇公)) 
+  end</div></pre>
 <h4 id="登场人物">登场人物</h4>
 <pre style="all:unset;"><div class="mermaid">mindmap
 root))大义灭亲((
@@ -3093,6 +3140,34 @@ root))大义灭亲((
     )宋穆公:弟(
       )公子冯:子&lt;br&gt;宋庄公(
   ((虢公忌父&lt;br&gt;&lt;虢石父孙子&gt;))</div></pre>
+<pre style="all:unset;"><div class="mermaid">graph TB
+  subgraph 周王朝
+    ZWW((周文王&lt;br/&gt;&lt;姬昌&gt;)) -- 老大 --&gt;  BYK((伯邑考)) --&gt; BYKZS(早死)
+    ZWW -- 老二 --&gt;  JF((姬发:周武王)) -- 子 --&gt;  JS((姬诵:周成王))
+    ZWW -- 老四 --&gt;  ZGD((周公&lt;旦&gt;))
+    ZGD --即位时年幼，周公辅政--&gt; JS
+    subgraph 三监
+      JX((姬鲜:管叔))
+      JD((姬度:蔡叔))
+      JC((姬处:霍叔))
+    end
+    ZWW -- 老三 --&gt;  JX
+    ZWW -- 老五 --&gt;  JD-- 子 --&gt;  JZ((蔡仲:蔡侯))
+    ZWW -- 老八 --&gt;  JC
+
+    JX --&gt; JXBS(初封管国&lt;今河南郑州&gt;，后管卫国&lt;br/&gt;被诛后管国从此消失，只称管邑&lt;br/&gt;叛乱:反对周公代行王事)
+    JD --&gt; JDFZ(初封蔡国&lt;今河南郑州北&gt;，后管鄘国&lt;br/&gt;被放逐后，儿子蔡仲新封蔡国&lt;今河南上蔡&gt;&lt;br/&gt;叛乱:反对周公代行王事)
+    JZ --&gt; JZLG(被周公派到鲁国为卿，帮助周公儿子伯禽创建鲁国)
+    JC --&gt;  JCBB(初封霍国&lt;今山西霍州&gt;，后管邶bei4国&lt;朝歌以北&gt;&lt;br/&gt;叛乱后被贬为庶人，罪责较小，霍国保留&lt;br/&gt;叛乱:反对周公代行王事)
+
+    ZWW -- 老九 --&gt;  JF1((姬封:康叔)) --&gt; WGGJ(原封于康国，后改封卫国，卫国开国君主&lt;br/&gt;卫国:殷商移民，上层是姬姓诸侯，和周王室是近亲)
+    
+    WG((武庚)) --&gt; WGBX(初封朝歌&lt;今河南淇县&gt;,后因叛乱被杀&lt;br/&gt;叛乱:反对周公代行王事)
+    WZ((微子)) --&gt; WZSG(武庚被杀后继承殷祀，建宋国&lt;今河南商丘&gt;&lt;br/&gt;宋国:殷商移民，继承了殷商的商火)
+  end
+
+  ZW((纣王)) --子--&gt; WG
+  ZW((纣王)) --庶兄--&gt; WZ</div></pre>
 <h5 id="附卫国来历">附:卫国来历</h5>
 <pre style="all:unset;"><div class="mermaid">mindmap
 root)周文王&lt;姬昌&gt;(
