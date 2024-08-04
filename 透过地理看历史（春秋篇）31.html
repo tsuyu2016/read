@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>&#x6625;&#x79cb;&#x5927;&#x4e8b;&#x8bb0;</title>
+            <title>&#x900f;&#x8fc7;&#x5730;&#x7406;&#x770b;&#x5386;&#x53f2;&#xff08;&#x6625;&#x79cb;&#x7bc7;&#xff09;</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -3016,8 +3016,8 @@ body.marp-vscode blockquote {
             <div class="github-markdown-content"><span id="markdown-mermaid" aria-hidden="true"
                     data-dark-mode-theme="dark"
                     data-light-mode-theme="default"></span>
-                <h2 id="春秋大事记">春秋大事记</h2>
-<h3 id="周王朝">周王朝</h3>
+                <h2 id="透过地理看历史春秋篇">透过地理看历史（春秋篇）</h2>
+<h3 id="第三十一章-楚王好细腰">第三十一章 楚王好细腰</h3>
 <pre style="all:unset;"><div class="mermaid">---
 config:
   themeCSS: '
@@ -3046,11 +3046,73 @@ gantt
   axisFormat %s
   todayMarker off
 
-  section 春秋大事记(周王朝)
-  周幽王(前781～前771): -781,-771
-  前771年，烽火戏诸侯: milestone,-771,
-  周平王(前770～前720): -770,-720
-  前770年，迁都洛邑， 史称东周: milestone,-770,</div></pre>
+  section 时间轴线
+  楚灵王(前541～前529): -541,-529
+  前538年，伐吴杀庆封: milestone, -538,
+  前535年，章华台建成: milestone, -535,
+  前533年，灭陈: milestone, -533,
+  前531年，灭蔡: milestone, -531,
+  前530年，伐徐: milestone, -530,
+  前529年，楚灵王自杀: milestone, -529,
+  燕惠公(前544～前536): -544,-536
+  前539年，燕惠公逃至齐国: milestone, -539,
+  燕悼公(前535～前529): -535,-529</div></pre>
+<h4 id="登场人物">登场人物</h4>
+<pre style="all:unset;"><div class="mermaid">graph TB
+  subgraph 楚国
+    direction TB
+    CCGW((楚共王)) --长子--&gt; CGZZ((公子昭&lt;br&gt;楚康王))
+    CCGW((楚共王)) --次子--&gt; CCLW((公子围&lt;br&gt;楚灵王))
+    CCGW((楚共王)) --三子--&gt; CGZB((公子比)) --&gt; 自杀
+    CCGW((楚共王)) --四子--&gt; CGZHG((公子黑肱)) --&gt; 自杀
+    CCGW((楚共王)) --幼子--&gt; CGZQJ((公子弃疾&lt;br&gt;楚平王))
+
+    CCLW --儿子--&gt; CSZL((世子禄)) --&gt; 被杀
+    CCLW --儿子--&gt; CGZBD((公子罢敌)) --&gt; 被杀
+    CCLW --&gt; 自杀
+
+    subgraph 楚国大夫
+      CYYZD((右尹郑丹))
+      CSWY((申无宇)) --儿子--&gt; CSH((申亥))
+    end
+
+  end
+
+  subgraph 吴国
+    WQF((庆封))
+  end
+
+  subgraph 陈国
+    subgraph 陈国533[前533年,陈国内乱]
+      CCAG((陈哀公)) --子--&gt; CL((留))
+      CCAG --弟--&gt; CSTZ((司徒招)) --1.照顾--&gt; CL
+      CCAG --世子--&gt; CD((悼)) 
+      CSTZ --2.杀死--&gt; CD
+      CSTZ --3.立为世子--&gt; CL
+      CSTZ --4.包围--&gt; CCAG
+      CCAG --5.自缢身亡--&gt; CCAG
+    end
+    CD --儿子--&gt; CGZW((公子吴&lt;br&gt;陈惠公))
+  end
+
+  subgraph 蔡国
+    subgraph 蔡国543[前543年,蔡国内乱]
+      CCJH((蔡景侯)) --世子--&gt; CCLH((般&lt;br/&gt;&lt;蔡灵侯&gt;))--妻子--&gt; CCQ((楚人))
+      CCJH --1.私通--&gt; CCQ
+      CCLH --2.弑父--&gt; CCJH
+    end
+    CCLH --&gt;  前531年,被楚灵王杀
+    CGQ --&gt;  前531年,被楚灵王杀
+    CCJH --少子--&gt; CGZL((公子庐&lt;br&gt;蔡平侯))
+    CGQ((观起)) --儿子--&gt; CGC((观从))
+
+  end
+  
+  subgraph 燕国
+    YYHG((燕惠公)) --儿子--&gt; YYDG((燕悼公))
+    YS((宋)) --&gt; 被其他大夫杀死
+    YYHG --宠臣--&gt; YS
+  end</div></pre>
 </div>
         </div>
             
